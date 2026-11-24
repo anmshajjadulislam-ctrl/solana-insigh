@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solana Insight - An interactive research website exploring Solana blockchain, consensus, tokenomics, price volatility, smart contract security and wallet risks.">
+    <title>Solana Insight | Blockchain Research</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <a href="#overview" class="brand">
+            <div class="brand-icon">
+                <span></span><span></span><span></span>
+            </div>
+            <div>
+                <strong>Solana<span>Insight</span></strong>
+                <small>BLOCKCHAIN RESEARCH</small>
+            </div>
+        </a>
+
+        <div class="nav-label">RESEARCH MENU</div>
+
+        <nav class="navigation">
+            <a href="#overview" class="nav-link active">⌂ <span>Overview</span></a>
+            <a href="#consensus" class="nav-link">◈ <span>Consensus</span></a>
+            <a href="#tokenomics" class="nav-link">◉ <span>Tokenomics</span></a>
+            <a href="#market" class="nav-link">↗ <span>Price Analysis</span></a>
+            <a href="#security" class="nav-link">◇ <span>Smart Contract Security</span></a>
+            <a href="#wallets" class="nav-link">▣ <span>Wallet Comparison</span></a>
+            <a href="#references" class="nav-link">☷ <span>References</span></a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="sidebar-status">
+                <span class="status-dot"></span>
+                Research Prototype
+            </div>
+            <p>Blockchain & Cryptocurrency Concepts</p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <span class="eyebrow">BLOCKCHAIN RESEARCH PLATFORM</span>
+                <h2>Solana Ecosystem</h2>
+            </div>
+            <div class="topbar-right">
+                <span class="live-indicator"><i></i> Live Market</span>
+                <div class="avatar">SI</div>
+            </div>
+        </header>
+
+        <!-- OVERVIEW -->
+
+        <section id="overview" class="section hero-section">
+            <div class="hero-content">
+                <span class="pill">LAYER 1 BLOCKCHAIN</span>
+
+                <h1>Explore the Future<br>of <span>Solana.</span></h1>
+
+                <p>
+                    Discover the technology, economics, security and market
+                    performance behind one of the leading high-performance
+                    blockchain networks.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#consensus" class="btn-primary">Explore Technology ↗</a>
+                    <a href="#market" class="btn-secondary">View Market Data</a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="status-dot"></span>
+                    Independent educational research prototype
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="solana-symbol">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="floating-card card-top">
+                    <small>NETWORK</small>
+                    <strong>Solana</strong>
+                </div>
+                <div class="floating-card card-bottom">
+                    <small>NATIVE TOKEN</small>
+                    <strong>SOL</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <article class="stat-card">
+                <div class="stat-icon">◈</div>
+                <span>NETWORK TYPE</span>
+                <h3>Layer 1</h3>
+                <small>Independent blockchain</small>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon">◎</div>
+                <span>NATIVE TOKEN</span>
+                <h3>SOL</h3>
+                <small>Network utility token</small>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon">⚡</div>
+                <span>CONSENSUS</span>
+                <h3>Alpenglow</h3>
+                <small>PoS-based consensus</small>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon">◇</div>
+                <span>ECOSYSTEM</span>
+                <h3>dApps</h3>
+                <small>Decentralized applications</small>
+            </article>
+        </section>
+
+        <section class="info-banner">
+            <div class="banner-icon">i</div>
+            <div>
+                <h3>What is Solana?</h3>
+                <p>
+                    Solana is a public, permissionless Layer 1 blockchain
+                    designed to support decentralized applications,
+                    digital assets and fast transaction processing.
+                    SOL is used for transaction fees, staking and
+                    participation in the network.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONSENSUS -->
+
+        <section id="consensus" class="section content-section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">01 / NETWORK TECHNOLOGY</span>
+                    <h2>Consensus Mechanism</h2>
+                    <p>How Solana validators coordinate and agree on network state.</p>
+                </div>
+                <span class="section-number">01</span>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card highlight-card">
+                    <div class="feature-icon">⚡</div>
+                    <span class="card-tag">CURRENT CONSENSUS</span>
+                    <h3>Alpenglow</h3>
+                    <p>
+                        Alpenglow is Solana's newer consensus architecture.
+                        Its Votor component handles validator voting and
+                        transaction finality through stake-weighted certificates.
+                    </p>
+                    <a href="https://solana.com/developers/migrate-to-solana/consensus" target="_blank" rel="noopener">
+                        Official explanation ↗
+                    </a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">◈</div>
+                    <span class="card-tag">PROOF OF STAKE</span>
+                    <h3>PoS</h3>
+                    <p>
+                        Validators stake SOL to participate in network security.
+                        Stake weight influences validator voting power and
+                        helps protect the network.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">◷</div>
+                    <span class="card-tag">HISTORICAL TECHNOLOGY</span>
+                    <h3>Proof of History</h3>
+                    <p>
+                        PoH provides a cryptographically verifiable sequence
+                        of events and served as a timing mechanism in
+                        Solana's earlier Tower BFT architecture.
+                    </p>
+                </article>
+            </div>
+
+            <div class="process-card">
+                <h3>How the Consensus Process Works</h3>
+                <p class="process-description">
+                    A simplified educational view of validator coordination.
+                </p>
+
+                <div class="process-flow">
+                    <div class="process-step">
+                        <div>01</div>
+                        <strong>Transactions</strong>
+                        <small>Users submit transactions</small>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="process-step">
+                        <div>02</div>
+                        <strong>Validators</strong>
+                        <small>Validate network activity</small>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="process-step">
+                        <div>03</div>
+                        <strong>Votor</strong>
+                        <small>Stake-weighted voting</small>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="process-step">
+                        <div>04</div>
+                        <strong>Finality</strong>
+                        <small>Network agrees on state</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="note-box">
+                <strong>Important distinction:</strong>
+                Proof of History is not itself a consensus algorithm.
+                Solana's current consensus documentation describes Alpenglow
+                and Votor, while Tower BFT and PoH belong to its earlier architecture.
+            </div>
+        </section>
+
+        <!-- TOKENOMICS -->
+
+        <section id="tokenomics" class="section content-section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">02 / TOKEN ECONOMICS</span>
+                    <h2>Supply & Distribution</h2>
+                    <p>Understanding SOL issuance, utility and inflation.</p>
+                </div>
+                <span class="section-number">02</span>
+            </div>
+
+            <div class="token-grid">
+                <article class="token-card">
+                    <span class="card-tag">GENESIS SUPPLY</span>
+                    <h3>500 Million SOL</h3>
+                    <p>
+                        The genesis supply established the initial SOL
+                        token base when the network launched.
+                    </p>
+                </article>
+
+                <article class="token-card">
+                    <span class="card-tag">SUPPLY MODEL</span>
+                    <h3>Inflationary</h3>
+                    <p>
+                        New SOL can be issued through the protocol's
+                        inflation schedule to support staking rewards.
+                    </p>
+                </article>
+
+                <article class="token-card">
+                    <span class="card-tag">MAXIMUM SUPPLY</span>
+                    <h3>No Fixed Cap</h3>
+                    <p>
+                        Solana does not have a fixed maximum supply.
+                        Supply changes through issuance and token burns.
+                    </p>
+                </article>
+            </div>
+
+            <div class="content-panel">
+                <h3>Solana Inflation Schedule</h3>
+                <p>
+                    The published inflation schedule starts at 8% annually,
+                    decreases by 15% year-over-year and approaches a
+                    long-term inflation rate of 1.5%.
+                </p>
+
+                <div class="inflation-list">
+                    <div>
+                        <span>Initial inflation rate</span>
+                        <strong>8%</strong>
+                    </div>
+                    <div>
+                        <span>Annual disinflation rate</span>
+                        <strong>-15%</strong>
+                    </div>
+                    <div>
+                        <span>Long-term inflation rate</span>
+                        <strong>1.5%</strong>
+                    </div>
+                </div>
+
+                <p class="small-note">
+                    These are protocol schedule parameters, not a live
+                    measurement of the current effective inflation rate.
+                </p>
+            </div>
+
+            <div class="utility-panel">
+                <h3>What is SOL used for?</h3>
+                <div class="utility-grid">
+                    <div><span>01</span><strong>Transaction Fees</strong><p>Paying network transaction costs.</p></div>
+                    <div><span>02</span><strong>Staking</strong><p>Supporting network security through delegation.</p></div>
+                    <div><span>03</span><strong>Applications</strong><p>Interacting with decentralized applications.</p></div>
+                    <div><span>04</span><strong>Network Activity</strong><p>Participating in the Solana ecosystem.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARKET -->
+
+        <section id="market" class="section content-section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">03 / MARKET RESEARCH</span>
+                    <h2>Price & Volatility Analysis</h2>
+                    <p>Historical SOL market performance over approximately 12 months.</p>
+                </div>
+                <span class="section-number">03</span>
+            </div>
+
+            <div class="market-grid">
+                <article class="market-stat">
+                    <span>LIVE SOL PRICE</span>
+                    <h3 id="latestPrice">Loading...</h3>
+                    <small>USD</small>
+                </article>
+                <article class="market-stat">
+                    <span>12-MONTH HIGH</span>
+                    <h3 id="priceHigh">Loading...</h3>
+                    <small>USD</small>
+                </article>
+                <article class="market-stat">
+                    <span>12-MONTH LOW</span>
+                    <h3 id="priceLow">Loading...</h3>
+                    <small>USD</small>
+                </article>
+                <article class="market-stat">
+                    <span>OBSERVED CHANGE</span>
+                    <h3 id="priceChange">Loading...</h3>
+                    <small>Approx. 12 months</small>
+                </article>
+            </div>
+
+            <div class="chart-panel">
+                <div class="chart-heading">
+                    <div>
+                        <h3>SOL / USD</h3>
+                        <p>Historical daily price data</p>
+                    </div>
+                    <span class="chart-badge">12 MONTHS</span>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="priceChart"></canvas>
+                </div>
+
+                <p id="chartStatus" class="chart-status">
+                    Connecting to market data...
+                </p>
+            </div>
+
+            <div class="volatility-panel">
+                <div class="volatility-icon">↕</div>
+                <div>
+                    <h3>Historical Volatility</h3>
+                    <p id="volatilitySummary">
+                        Calculating annualized historical volatility...
+                    </p>
+                    <small>
+                        Historical volatility measures past price variation.
+                        It does not predict future market performance.
+                    </small>
+                </div>
+            </div>
+
+            <div class="note-box">
+                <strong>Research note:</strong>
+                Price data is retrieved from CoinGecko. The chart and
+                calculations depend on API availability and may be delayed
+                or temporarily unavailable. This is educational market
+                analysis, not investment advice.
+            </div>
+        </section>
+
+        <!-- SECURITY -->
+
+        <section id="security" class="section content-section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">04 / SMART CONTRACT SECURITY</span>
+                    <h2>Common Vulnerabilities</h2>
+                    <p>Security risks developers should understand when building Solana programs.</p>
+                </div>
+                <span class="section-number">04</span>
+            </div>
+
+            <div class="security-grid">
+                <article class="security-card">
+                    <span class="risk-label high">HIGH RISK</span>
+                    <h3>Missing Signer Checks</h3>
+                    <p>
+                        A program may allow an unauthorized user to perform
+                        an action if it fails to verify the required signer.
+                    </p>
+                    <div class="mitigation">
+                        <strong>Mitigation</strong>
+                        <p>Verify signer identity and authorization before sensitive operations.</p>
+                    </div>
+                </article>
+
+                <article class="security-card">
+                    <span class="risk-label high">HIGH RISK</span>
+                    <h3>Account Validation Errors</h3>
+                    <p>
+                        Incorrect account ownership or relationship checks
+                        may allow attackers to supply unexpected accounts.
+                    </p>
+                    <div class="mitigation">
+                        <strong>Mitigation</strong>
+                        <p>Validate account ownership, addresses, relationships and expected data.</p>
+                    </div>
+                </article>
+
+                <article class="security-card">
+                    <span class="risk-label medium">MEDIUM RISK</span>
+                    <h3>Input Validation Issues</h3>
+                    <p>
+                        Malicious or unexpected input values can cause
+                        incorrect calculations or unauthorized program behavior.
+                    </p>
+                    <div class="mitigation">
+                        <strong>Mitigation</strong>
+                        <p>Check data types, ranges, arithmetic operations and business rules.</p>
+                    </div>
+                </article>
+
+                <article class="security-card">
+                    <span class="risk-label medium">MEDIUM RISK</span>
+                    <h3>Private Key Exposure</h3>
+                    <p>
+                        Exposed private keys can allow attackers to control
+                        accounts and transfer assets without permission.
+                    </p>
+                    <div class="mitigation">
+                        <strong>Mitigation</strong>
+                        <p>Use secure key management, hardware wallets and encrypted backups.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="note-box">
+                <strong>Security principle:</strong>
+                Never trust accounts or input supplied by a user without
+                verification. Follow Solana's official security guidance
+                and test programs before deployment.
+            </div>
+        </section>
+
+        <!-- WALLETS -->
+
+        <section id="wallets" class="section content-section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">05 / DIGITAL ASSET SAFETY</span>
+                    <h2>Wallet Risk Comparison</h2>
+                    <p>Comparing custodial exchange wallets and self-custody wallets.</p>
+                </div>
+                <span class="section-number">05</span>
+            </div>
+
+            <div class="wallet-grid">
+                <article class="wallet-card">
+                    <div class="wallet-icon">▣</div>
+                    <span class="card-tag">THIRD-PARTY CUSTODY</span>
+                    <h3>Custodial Wallet</h3>
+                    <p>
+                        A service provider or cryptocurrency exchange
+                        controls the private keys on behalf of the user.
+                    </p>
+
+                    <div class="wallet-detail">
+                        <strong>Advantages</strong>
+                        <p>Convenient access, account recovery and customer support.</p>
+                    </div>
+                    <div class="wallet-detail danger">
+                        <strong>Risks</strong>
+                        <p>Exchange hacks, insolvency, withdrawal restrictions and account freezes.</p>
+                    </div>
+                    <div class="control-label">
+                        <span>Private key control</span>
+                        <strong>Service Provider</strong>
+                    </div>
+                </article>
+
+                <article class="wallet-card recommended">
+                    <div class="wallet-icon">◇</div>
+                    <span class="card-tag">USER CONTROLLED</span>
+                    <h3>Self-Custody Wallet</h3>
+                    <p>
+                        The user controls the private keys or recovery phrase
+                        and authorizes transactions directly.
+                    </p>
+
+                    <div class="wallet-detail">
+                        <strong>Advantages</strong>
+                        <p>Direct asset control, independence and reduced exchange custody risk.</p>
+                    </div>
+                    <div class="wallet-detail danger">
+                        <strong>Risks</strong>
+                        <p>Lost recovery phrase, phishing, malware and unauthorized signing.</p>
+                    </div>
+                    <div class="control-label">
+                        <span>Private key control</span>
+                        <strong>User</strong>
+                    </div>
+                </article>
+            </div>
+
+            <div class="note-box">
+                <strong>Conclusion:</strong>
+                Custodial wallets offer convenience but introduce third-party
+                custody risk. Self-custody offers greater direct control,
+                but the user becomes responsible for securing private keys.
+            </div>
+        </section>
+
+        <!-- REFERENCES -->
+
+        <section id="references" class="section content-section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">06 / RESEARCH SOURCES</span>
+                    <h2>References & Resources</h2>
+                    <p>Official documentation and research sources used for this prototype.</p>
+                </div>
+                <span class="section-number">06</span>
+            </div>
+
+            <div class="reference-list">
+
+                <a href="https://solana.com/docs" target="_blank" rel="noopener" class="reference-item">
+                    <div><span>01</span><strong>Solana Documentation</strong><small>Official technical documentation</small></div>
+                    <b>↗</b>
+                </a>
+
+                <a href="https://solana.com/developers/migrate-to-solana/consensus" target="_blank" rel="noopener" class="reference-item">
+                    <div><span>02</span><strong>Solana Consensus</strong><small>Alpenglow, Votor and consensus architecture</small></div>
+                    <b>↗</b>
+                </a>
+
+                <a href="https://solana.com/staking" target="_blank" rel="noopener" class="reference-item">
+                    <div><span>03</span><strong>Solana Staking & Inflation FAQ</strong><small>Official staking and inflation information</small></div>
+                    <b>↗</b>
+                </a>
+
+                <a href="https://solana.com/docs/tools/security" target="_blank" rel="noopener" class="reference-item">
+                    <div><span>04</span><strong>Solana Security</strong><small>Official developer security guidance</small></div>
+                    <b>↗</b>
+                </a>
+
+                <a href="https://www.coingecko.com/en/coins/solana" target="_blank" rel="noopener" class="reference-item">
+                    <div><span>05</span><strong>CoinGecko – Solana</strong><small>Market information and historical prices</small></div>
+                    <b>↗</b>
+                </a>
+
+                <a href="https://solana.com/wallets" target="_blank" rel="noopener" class="reference-item">
+                    <div><span>06</span><strong>Solana Wallet Directory</strong><small>Wallet types and ecosystem information</small></div>
+                    <b>↗</b>
+                </a>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-brand">Solana<span>Insight</span></div>
+            <p>An educational blockchain research prototype.</p>
+            <small>© <span id="currentYear"></span> Solana Insight. Not affiliated with the Solana Foundation.</small>
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>
